@@ -1,8 +1,13 @@
-Flask==2.3.3
-opencv-python==4.8.1.78
-deepface==0.0.75
 numpy==1.24.3
-Pillow==10.0.1
+opencv-python==4.8.1.78
 tensorflow==2.13.0
 keras==2.13.1
+deepface==0.0.75
+Flask==2.3.3
+Pillow==10.0.1
+pandas==1.5.3
+gdown==4.7.1
+tqdm==4.65.0
 protobuf==3.20.3
+werkzeug==2.3.7
+jinja2==3.1.2
