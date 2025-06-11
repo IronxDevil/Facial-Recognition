@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facial Recognition System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎭 Facial Recognition System</h1>
+            <p>Real-time face recognition with emotion and gender detection</p>
+        </header>
+
+        <main class="main-content">
+            <section class="video-section">
+                <div class="video-container">
+                    <img id="video-feed" src="{{ url_for('video_feed') }}" alt="Video Feed">
+                    <div class="video-overlay">
+                        <div class="status-indicator">
+                            <span id="status-dot" class="status-dot inactive"></span>
+                            <span id="status-text">Inactive</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="controls">
+                    <button id="start-btn" class="btn btn-primary">Start Recognition</button>
+                    <button id="stop-btn" class="btn btn-secondary" disabled>Stop Recognition</button>
+                    <button id="reload-btn" class="btn btn-accent">Reload Database</button>
+                </div>
+            </section>
+
+            <section class="results-section">
+                <h2>Recognition Results</h2>
+                <div class="results-grid">
+                    <div class="result-item">
+                        <span class="label">Status:</span>
+                        <span id="status" class="value inactive">Inactive</span>
+                    </div>
+                    <div class="result-item">
+                        <span class="label">Identity:</span>
+                        <span id="identity" class="value">Unknown</span>
+                    </div>
+                    <div class="result-item">
+                        <span class="label">Gender:</span>
+                        <span id="gender" class="value">Unknown</span>
+                    </div>
+                    <div class="result-item">
+                        <span class="label">Emotion:</span>
+                        <span id="emotion" class="value">Unknown</span>
+                    </div>
+                    <div class="result-item">
+                        <span class="label">Confidence:</span>
+                        <span id="confidence" class="value">0%</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="info-section">
+                <h3>📋 How to Use</h3>
+                <ul>
+                    <li>Add photos to <code>database/photos/</code> folder</li>
+                    <li>Name files with person's name (e.g., <code>john_doe.jpg</code>)</li>
+                    <li>Click "Reload Database" after adding photos</li>
+                    <li>Click "Start Recognition" to begin analysis</li>
+                    <li>Allow camera access when prompted</li>
+                </ul>
+
+                <h3>📊 Features</h3>
+                <ul>
+                    <li>Real-time face recognition</li>
+                    <li>Gender detection (Male/Female)</li>
+                    <li>Emotion analysis (Happy, Sad, Angry, etc.)</li>
+                    <li>Confidence scoring</li>
+                    <li>Live webcam feed</li>
+                </ul>
+            </section>
+        </main>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
