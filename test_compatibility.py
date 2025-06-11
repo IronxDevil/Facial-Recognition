@@ -4,6 +4,7 @@ Quick compatibility test for facial recognition system
 """
 import sys
 import traceback
+import subprocess
 
 def test_critical_compatibility():
     """Test critical package compatibility"""
@@ -203,4 +204,5 @@ def main():
         print("🔧 Manual intervention required")
 
 if __name__ == "__main__":
-    main()
+    success = test_critical_compatibility()
+    sys.exit(0 if success else 1)
