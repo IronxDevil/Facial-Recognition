@@ -2,7 +2,7 @@
 
 A real-time web-based facial recognition system built with Python Flask, DeepFace, OpenCV, and TensorFlow. Features live face recognition, emotion analysis, gender detection, and a modern responsive web interface.
 
-## ✨ Features
+## Features
 
 ### Real-Time Recognition
 - **Live Camera Feed**: Real-time facial recognition from webcam with mirror effect
@@ -30,7 +30,7 @@ A real-time web-based facial recognition system built with Python Flask, DeepFac
 - **Stop Recognition**: Click stop button or use interface
 - **Reload Database**: Click reload button to refresh face database
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 - Python 3.7+
@@ -73,7 +73,7 @@ python app.py
 http://localhost:5050
 ```
 
-## 📦 Dependencies
+## Dependencies
 
 ### Core Libraries
 ```txt
@@ -96,7 +96,7 @@ werkzeug==2.3.7           # WSGI utilities
 jinja2==3.1.2             # Template engine
 ```
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 Facial-Recognition/
@@ -115,7 +115,7 @@ Facial-Recognition/
     └── photos/              # 👥 Face database storage
 ```
 
-## 🎯 Usage Guide
+## Usage Guide
 
 ### Setting Up Face Database
 
@@ -165,7 +165,7 @@ database/photos/
 - **Reload Database**: Click "Reload Database" button to refresh without restart
 - **Remove Photos**: Delete unwanted photos from the folder and reload
 
-## 🔧 Configuration
+## Configuration
 
 ### Application Settings
 ```python
@@ -208,7 +208,7 @@ DeepFace automatically downloads and uses:
 - `GET /get_results` - Get current recognition results
 - `GET /reload_database` - Reload face database
 
-## 🐛 Troubleshooting
+## Troubleshooting
 
 ### Installation Issues
 
@@ -368,9 +368,5 @@ python app.py
 <div align="center">
 
 **⭐ Star this repository if you found it helpful!**
-
-Made with ❤️ using Python and Flask
-
-[🌟 Star](https://github.com/IronxDevil/Facial-Recognition) • [🐛 Report Bug](https://github.com/IronxDevil/Facial-Recognition/issues) • [💡 Request Feature](https://github.com/IronxDevil/Facial-Recognition/issues)
 
 </div>
