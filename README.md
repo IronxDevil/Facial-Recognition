@@ -1,10 +1,10 @@
-# 🎭 Facial Recognition System
+# Facial Recognition System
 
 A real-time web-based facial recognition system built with Python Flask, DeepFace, OpenCV, and TensorFlow. Features live face recognition, emotion analysis, gender detection, and a modern responsive web interface.
 
 ## ✨ Features
 
-### 🎥 Real-Time Recognition
+### Real-Time Recognition
 - **Live Camera Feed**: Real-time facial recognition from webcam with mirror effect
 - **Identity Detection**: Recognize known faces from photo database
 - **Gender Detection**: Automatic gender classification (Male/Female)
@@ -12,20 +12,20 @@ A real-time web-based facial recognition system built with Python Flask, DeepFac
 - **Confidence Scoring**: Accuracy percentage for face recognition
 - **Face Detection**: OpenCV-powered face detection with bounding boxes
 
-### 📸 Photo Management
+### Photo Management
 - **Simple Database**: Store face photos in `database/photos/` folder
 - **Auto-reload**: Reload database without restarting application
 - **Multiple Formats**: Support for PNG, JPG, JPEG images
 - **Name-based Recognition**: File names become identity labels
 
-### 🎨 Modern Interface
+### Modern Interface
 - **Responsive Design**: Clean, modern web interface
 - **Real-time Updates**: Live recognition results display
 - **Visual Status**: Active/inactive indicators with color coding
 - **Control Buttons**: Start, stop, and reload functionality
 - **Keyboard Shortcuts**: Quick access to main functions
 
-### ⌨️ Keyboard Shortcuts
+### Command Buttons
 - **Start Recognition**: Click start button or use interface
 - **Stop Recognition**: Click stop button or use interface
 - **Reload Database**: Click reload button to refresh face database
@@ -339,10 +339,6 @@ python app.py
 - Add error handling for new features
 - Test with different browsers and cameras
 
-## 📄 License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
 ## 🙏 Acknowledgments
 
 - **DeepFace** - Facial analysis framework by SefaIlkimen
@@ -373,7 +369,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 **⭐ Star this repository if you found it helpful!**
 
-Made with ❤️ using Python, Flask, and AI
+Made with ❤️ using Python and Flask
 
 [🌟 Star](https://github.com/IronxDevil/Facial-Recognition) • [🐛 Report Bug](https://github.com/IronxDevil/Facial-Recognition/issues) • [💡 Request Feature](https://github.com/IronxDevil/Facial-Recognition/issues)
 
